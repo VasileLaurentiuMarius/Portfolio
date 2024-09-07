@@ -1,0 +1,33 @@
+ul{
+    list-style-type: none;
+    display: inline-flex;
+    gap: 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+nav{
+    border-bottom: black solid 1px ;
+    height: 40px;
+}
+#about{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 400px 400px;
+    grid-template-areas: "me pic";
+}
+#me{
+    grid-area: me;
+}
+#pic{
+    width: 100px;
+    height: 100px;
+    grid-area: pic;
+}
+ img{
+    width: 200px;
+}
