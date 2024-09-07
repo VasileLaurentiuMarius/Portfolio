@@ -1,10 +1,15 @@
+body{
+    margin: 0 100px;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 ul{
     list-style-type: none;
     display: inline-flex;
     gap: 20px;
     position: absolute;
     top: 10px;
-    right: 20px;
+    right: 120px;
 }
 a{
     color: black;
@@ -14,20 +19,73 @@ nav{
     border-bottom: black solid 1px ;
     height: 40px;
 }
+.title{
+    font-size: 26px;
+    font-family: monospace;
+}
+.project{
+    display: none;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+}
+#node{
+    width: 70px;
+    height: 40px;
+}
 #about{
     display: grid;
-    grid-template-columns: 400px 400px;
-    grid-template-rows: 400px 400px;
+    grid-template-columns: 70% 250px;
     grid-template-areas: "me pic";
+    height: 200px;
 }
 #me{
     grid-area: me;
+    margin-right: 20px;
 }
 #pic{
+    margin-top: 40%;
     width: 100px;
     height: 100px;
     grid-area: pic;
 }
- img{
+#projects{
+    margin-top: 200px;
+}
+aside img{
     width: 200px;
+}
+@media only screen and (max-width: 780px) {
+    body {
+        margin: 0 50px;
+        font-size: 14px;
+    }
+    ul{
+        right: 20px;
+    }
+}
+@media only screen and (max-width: 580px) {
+    body {
+        margin: 0 20px;
+        font-size: 14px;
+    }
+    ul{
+        margin-right: 14px;
+        position: absolute;
+        right: 10px;
+        gap: 10px;
+    }
+    #about{
+        display: block;
+    }
+    #projects{
+        margin-top: 280px;
+    }
+    #pic{
+        margin-top: 160px;
+        position: absolute;
+        right: 50%;
+        top: 30%;
+    }
 }
